@@ -547,14 +547,7 @@ article.article-list{
 .article-card{
 	width:100%;
 	display:block;
-	opacity:.7;
-	transition-duration:.5s;
 }
-
-	.article-card:hover{
-		opacity:1;
-	}
-
 
 /* END CONTENT SECTION */
 
