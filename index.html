@@ -1,0 +1,278 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="plugins/bootstrap_datepicker/assets/css/bootstrap-datepicker.css" rel="stylesheet" />
+
+    <!-- FONTS -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap" rel="stylesheet">
+
+    <title>Prueba Técnica</title>
+  </head>
+
+  <body>
+    <header class="header-section">
+      <div class="logo">
+        <a href="index.html">
+          <img src="img/logo.png">
+        </a>
+      </div>
+          
+      <nav>
+        <ul class="main-menu row col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+          <a href="index.html" class="col-xs-3 col-sm-3 col-md-12 col-lg-12 col-xl-12  full-width only-active no-padding">
+            <li class="center-flex-align">
+              <i class="material-icons">search</i>
+            </li>
+          </a>
+
+          <a href="vacio.html" class="col-xs-3 col-sm-3 col-md-12 col-lg-12 col-xl-12  full-width no-active no-padding">
+            <li class="center-flex-align">
+                <i class="material-icons no-active">favorite_border</i>
+            </li>
+          </a>
+
+          <a href="vacio.html" class="col-xs-3 col-sm-3 col-md-12 col-lg-12 col-xl-12  full-width no-active no-padding">
+            <li class="center-flex-align">
+                <i class="material-icons no-active">crop_16_9</i>
+            </li>
+          </a>
+
+          <a href="vacio.html" class="col-xs-3 col-sm-3 col-md-12 col-lg-12 col-xl-12  full-width no-active no-padding">
+            <li class="center-flex-align">
+                <i class="material-icons">perm_identity</i>
+            </li>
+          </a>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- CONTENEDOR -->
+
+    <div class="container-fluid">
+      <div class="row">
+        <header class="col-xs-12 col-sm-12 col-md-12 header-mobile">
+          <div class="row">
+
+            <div class="logo-mobile">
+              <a href="index.html">
+                <img src="img/logo.png">
+              </a>
+            </div>
+
+            <div class="logout-mobile">
+              <button type="button" class="btn btn-primary logout"><i class="fas fa-power-off"></i></button>
+            </div>
+
+          </div>
+        </header>
+
+        <section class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 content-section">
+          <div class="row">
+
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12   top-search">
+              <div class="row flex-center top-search-header_grid">
+              <div class="vertical-flex-align mobile-inline-block">
+                <h2 class="margin-r-20px bold">Búsqueda de artículos</h2>
+                <button type="button" class="btn btn-primary add-article">Agregar artículo <i class="fas fa-plus"></i></button>
+              </div>
+
+              <div class="normal-align-right no-mobile">
+                <button type="button" class="btn btn-primary logout"><i class="fas fa-power-off"></i></button>
+              </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="container-articles">
+
+            <!-- BÚSQUEDA -->
+
+            <div class="row search-row">
+
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <h2>Búsqueda</h2>
+              </div>
+                
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                <form action="#" method="get">
+                  <input  type="text" class="keywords" placeholder="Frases clave para la búsqueda">
+                  <input class="datepicker" type="text" placeholder="Desde: dd/mm/yyyy">
+                  <input class="datepicker" type="text" placeholder="Hasta: dd/mm/yyyy">
+                  <input type="submit" class="btn btn-primary search-button" value="BUSCAR">
+                </form>
+              </div>
+              
+            </div>
+
+            <!-- ARTÍCULOS -->
+
+            <div class="row articles-row">
+              <aside class="col-xs-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 filter-aside">
+                <h2>Filtros</h1>
+
+                <div class="grid-rows">
+                  <h3>Ubicación</h3>
+                  <select class="select-input">
+                    <option>Todas las ubicaciones</option>
+                  </select>
+                  <h3>Medio</h3>
+                  <select class="select-input">
+                    <option>Todos los medios</option>
+                  </select>
+                  <h3>Tipo</h3>
+                  <select class="select-input">
+                    <option>Todos los tipos</option>
+                  </select>
+                  <h3>Idioma</h3>
+                  <select class="select-input">
+                    <option>Todos los idiomas</option>
+                  </select>
+                  <h3>Rango de fechas</h3>
+                  <input class="datepicker" type="text" placeholder="Desde: dd/mm/yyyy">
+                  <input class="datepicker" type="text" placeholder="Hasta: dd/mm/yyyy">
+                </div>
+
+              </aside>
+
+              <section class="col-xs-12 col-sm-12 col-md-12 col-lg-9 col-xl-9  articles no-rl-padding">
+
+                <div class="total-search  row">
+                  <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8 col-xl-8  list-results">
+                    <p class="source-sans semi-bold gray-text">10 de 32875 resultados</p>
+                  </div>
+
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 col-xl-4  list-order">
+                    <select>
+                      <option>Ordenar por...</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  
+                    <article class="article-list">
+                      <a href="article-1.html" class="article-card">
+
+                      <!-- TOP ARTICLE -->
+
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 article-top">
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10 vertical-flex-align">
+                            <button type="button" class="btn btn-primary article-buttons margin-r-10px" height="30"><i class="fas fa-chart-area"></i></button>
+                            <img src="img/flags/mexico-flag-03.svg" height="30" class="margin-r-10px">
+                            <h3 class="semi-bold">Jalisco - Guadalajara</h3>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2  red-text right-flex-align">
+                            <i class="fas fa-heart  margin-r-10px"></i>
+                            <p class="sans-pro-14">143</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- END TOP ARTICLE -->
+
+                      <!-- ARTICLE TITLE -->
+
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 article-title">
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <h2 class="f-20 semi-bold">¿El Vicentillo a prisión? Ayudó en juicio de 'El Chapo'</h2>
+                          </div>
+                        </div>
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-5 col-xl-4 margin-t-10px vertical-flex-align article-font-rate grid-1-row-mobile">
+                            <p class="article-font margin-r-10px">El Imparcial</p>
+                            <div>
+                              <img src="img/rate-star-gold.svg" height="20" class="margin-r-2px">
+                              <img src="img/rate-star-gold.svg" height="20" class="margin-r-2px">
+                              <img src="img/rate-star-gold.svg" height="20" class="margin-r-2px">
+                              <img src="img/rate-star-gold.svg" height="20" class="margin-r-2px">
+                              <img src="img/rate-star-gray.svg" height="20" class="margin-r-2px">
+                            </div>
+                          </div>
+                         
+
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 margin-t-10px vertical-flex-align article-date">
+                            <img src="img/arrow-pointer.svg" height="20" class="margin-r-10px">
+                            <p class="semi-bold">Fecha del suceso - 21/03/1991</p>
+                          </div>
+
+                          <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 col-xl-4 margin-t-10px vertical-flex-align article-date-published">
+                            <img src="img/pen.svg" height="15" class="margin-r-10px">
+                            <p class="semi-bold">Fecha del publicación - 21/03/1991</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                        <!-- END ARTICLE TITLE -->
+
+                      <!-- ARTICLE CONTENT -->
+
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 article-content">
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+                            <p class="article-text f-16-5">El gobierno de Estados Unidos pidió que se condene a Vicente Zambada Niebla, "Vicentillo", a sólo 17 años de cárcel por narcotráfico, una sentencia mínima -se enfrentaba a cadena perpetua- que se explica por la "extraordinaria cooperación" con las autoridades estadounidenses para atrapar y sentenciar a otros narcotraficantes, entre ellos a Joaquín "El Chapo" Guzmán.</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- END ARTICLE CONTENT -->
+
+                      <!-- ARTICLE TAGS -->
+
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 article-tags">
+
+                        <div class="row">
+                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 vertical-flex-align flex-flow-inh">
+                            <p class="margin-r-10px">Etiquetas</p>
+                            <p class="article-tag-card margin-r-10px">Narcotráfico</p>
+                            <p class="article-tag-card margin-r-10px">Secuestro</p>
+                            <p class="article-tag-card margin-r-10px">Violación</p>
+                            <p class="article-tag-card margin-r-10px">Derechos Humanos</p>
+                          </div>
+                        </div>
+
+                      </div>
+
+                      <!-- END ARTICLE TAGS -->
+                      </a>
+                    </article>
+
+                </div>
+                
+              </section>
+            </div>
+
+          </div>
+
+        </section>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="https://kit.fontawesome.com/27b974a416.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="plugins/bootstrap_datepicker/assets/js/bootstrap-datepicker.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
+</html>
